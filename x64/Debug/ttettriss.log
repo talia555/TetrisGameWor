@@ -1,0 +1,117 @@
+﻿  board.cpp
+C:\Users\talau\source\repos\TetrisGameWor\point.h(46,13): error C2011: 'point': 'class' type redefinition
+C:\Users\talau\source\repos\TetrisGameWor\point.h(5): message : see declaration of 'point'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(8,15): error C2374: 'ESC': redefinition; multiple initialization
+C:\Users\talau\source\repos\TetrisGameWor\utils.h(8): message : see declaration of 'ESC'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(27,19): error C2365: 'board::width': redefinition; previous definition was 'data member'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(13): message : see declaration of 'board::width'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(27,30): error C2365: 'board::high': redefinition; previous definition was 'data member'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(13): message : see declaration of 'board::high'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(22,3): error C2065: 'myBoard': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\board.h(23,14): error C2143: syntax error: missing ';' before ')'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(25,2): error C2143: syntax error: missing ';' before '}'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(25,2): error C2143: syntax error: missing ')' before '}'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(25,1): error C2059: syntax error: '}'
+C:\Users\talau\source\repos\TetrisGameWor\board.cpp(22,12): error C2065: 'board2': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\board.cpp(35,12): error C2065: 'board1': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\board.cpp(50,5): error C2065: 'board2': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\board.cpp(55,5): error C2065: 'board2': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\board.cpp(59,5): error C2065: 'board2': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\board.cpp(74,5): error C2065: 'board1': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\board.cpp(78,5): error C2065: 'board1': undeclared identifier
+  game.cpp
+C:\Users\talau\source\repos\TetrisGameWor\board.cpp(82,5): error C2065: 'board1': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\game.h(7,13): error C3646: 'point': unknown override specifier
+C:\Users\talau\source\repos\TetrisGameWor\game.h(7,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\talau\source\repos\TetrisGameWor\point.h(46,13): error C2011: 'point': 'class' type redefinition
+C:\Users\talau\source\repos\TetrisGameWor\point.h(5): message : see declaration of 'point'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(8,15): error C2374: 'ESC': redefinition; multiple initialization
+C:\Users\talau\source\repos\TetrisGameWor\utils.h(8): message : see declaration of 'ESC'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(27,19): error C2365: 'board::width': redefinition; previous definition was 'data member'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(13): message : see declaration of 'board::width'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(27,30): error C2365: 'board::high': redefinition; previous definition was 'data member'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(13): message : see declaration of 'board::high'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(22,3): error C2065: 'myBoard': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\board.h(23,14): error C2143: syntax error: missing ';' before ')'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(25,2): error C2143: syntax error: missing ';' before '}'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(25,2): error C2143: syntax error: missing ')' before '}'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(25,1): error C2059: syntax error: '}'
+C:\Users\talau\source\repos\TetrisGameWor\game.cpp(12,3): error C3861: 'teris': identifier not found
+C:\Users\talau\source\repos\TetrisGameWor\game.cpp(13,3): error C2146: syntax error: missing ';' before identifier 'board'
+C:\Users\talau\source\repos\TetrisGameWor\game.cpp(14,10): error C2374: 'taliab': redefinition; multiple initialization
+C:\Users\talau\source\repos\TetrisGameWor\game.cpp(13): message : see declaration of 'taliab'
+C:\Users\talau\source\repos\TetrisGameWor\game.cpp(14,23): error C2143: syntax error: missing ';' before '.'
+C:\Users\talau\source\repos\TetrisGameWor\game.cpp(14,23): error C2059: syntax error: '.'
+C:\Users\talau\source\repos\TetrisGameWor\game.cpp(15,8): error C2027: use of undefined type 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.h(5): message : see declaration of 'point'
+C:\Users\talau\source\repos\TetrisGameWor\game.cpp(25,8): error C2512: 'board': no appropriate default constructor available
+C:\Users\talau\source\repos\TetrisGameWor\board.h(11,7): message : see declaration of 'board'
+C:\Users\talau\source\repos\TetrisGameWor\game.cpp(27,28): error C2248: 'board::width': cannot access private member declared in class 'board'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(13): message : see declaration of 'board::width'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(11): message : see declaration of 'board'
+C:\Users\talau\source\repos\TetrisGameWor\game.cpp(29,6): error C2039: 'board1': is not a member of 'board'
+C:\Users\talau\source\repos\TetrisGameWor\board.h(11): message : see declaration of 'board'
+C:\Users\talau\source\repos\TetrisGameWor\game.cpp(32,6): error C2039: 'board2': is not a member of 'board'
+  main.cpp
+C:\Users\talau\source\repos\TetrisGameWor\board.h(11): message : see declaration of 'board'
+C:\Users\talau\source\repos\TetrisGameWor\game.h(7,13): error C3646: 'point': unknown override specifier
+C:\Users\talau\source\repos\TetrisGameWor\game.h(7,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  point.cpp
+C:\Users\talau\source\repos\TetrisGameWor\main.cpp(7,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\talau\source\repos\TetrisGameWor\point.h(46,13): error C2011: 'point': 'class' type redefinition
+C:\Users\talau\source\repos\TetrisGameWor\point.h(5): message : see declaration of 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(5,14): error C2027: use of undefined type 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.h(5): message : see declaration of 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(7,6): error C2065: 'board': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(13,13): error C2027: use of undefined type 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.h(5): message : see declaration of 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(15,2): error C2065: 'board': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(15,8): error C2065: 'y': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(15,11): error C2065: 'x': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(15,16): error C2065: 'figure': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(18,13): error C2027: use of undefined type 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.h(5): message : see declaration of 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(29,5): error C2672: 'std::move': no matching overloaded function found
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(29,10): error C2780: '_DestTy *std::move(_InIt,_InIt,_DestTy (&)[_DestSize])': expects 3 arguments - 0 provided
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2107): message : see declaration of 'std::move'
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(29,10): error C2780: '_OutIt std::move(_InIt,_InIt,_OutIt)': expects 3 arguments - 0 provided
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\xutility(2095): message : see declaration of 'std::move'
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(29,10): error C2780: 'remove_reference<_Ty>::type &&std::move(_Ty &&) noexcept': expects 1 arguments - 0 provided
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\type_traits(1432): message : see declaration of 'std::move'
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(30,12): error C3861: 'getX': identifier not found
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(30,20): error C3861: 'getY': identifier not found
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(31,10): error C3861: 'getX': identifier not found
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(31,18): error C3861: 'getY': identifier not found
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(31,5): error C3861: 'draw': identifier not found
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(39,4): error C3861: 'setY': identifier not found
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(40,9): error C3861: 'getX': identifier not found
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(40,17): error C3861: 'getY': identifier not found
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(40,4): error C3861: 'draw': identifier not found
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(42,9): error C3861: 'getX': identifier not found
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(42,17): error C3861: 'getY': identifier not found
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(42,3): error C3861: 'erase': identifier not found
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(47,13): error C2027: use of undefined type 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.h(5): message : see declaration of 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(53,13): error C2027: use of undefined type 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.h(5): message : see declaration of 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(61,13): error C2027: use of undefined type 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.h(5): message : see declaration of 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(63,2): error C3861: 'direction': identifier not found
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(64,2): error C2065: 'x': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(64,7): error C2065: 'dirX': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(65,2): error C2065: 'y': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(65,7): error C2065: 'dirY': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(66,6): error C2065: 'y': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(67,3): error C2065: 'y': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(68,6): error C2065: 'x': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(69,3): error C2065: 'x': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(74,13): error C2027: use of undefined type 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.h(5): message : see declaration of 'point'
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(81,3): error C2065: 'dirX': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(82,3): error C2065: 'dirY': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(85,3): error C2065: 'dirX': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(86,3): error C2065: 'dirY': undeclared identifier
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(89,3): error C2065: 'dirY': undeclared identifier
+  utils.cpp
+  Generating Code...
+C:\Users\talau\source\repos\TetrisGameWor\point.cpp(90,3): error C2065: 'dirX': undeclared identifier

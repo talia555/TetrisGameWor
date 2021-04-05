@@ -2,6 +2,7 @@
 #include "point.h"
 
 
+
 bool  point::checksettle(int x, int y)
 {
 	if (board[y + 1][x] != ' ')
@@ -15,7 +16,7 @@ void point::putFeatureBoard()
 	board[y][x] = figure;
 }
 
-void point::runPoint(int x, int y)
+void point::runPoint(point& p)
 {
 	cout.flush();
 	int i, iter = 30;
@@ -27,35 +28,21 @@ void point::runPoint(int x, int y)
 			if (_kbhit())
 			{
 				move();
-				gotoxy(getX(), getY());
-				draw(getX(), getY());
+				draw(p);
 			}
 
 			cout.flush();
 		}
 		if (!_kbhit())
 		{
-			y++;
-			setY(y);
-			draw(getX(), getY());
+			setY(++y);
+			draw(p);
 		}
-		erase(getX(), getY());
+		erase(p);
 	}
 }
 
 
-void point::erase(int x, int y)
-{
-	gotoxy(x, y);
-	cout << " ";
-}
-
-void point::draw(int x, int y)
-{
-	gotoxy(x, y);
-	cout << "*";
-	Sleep(300);
-}
 
 
 void point::move()
@@ -64,13 +51,10 @@ void point::move()
 	x += dirX;
 	y += dirY;
 	if (y > high)
-		y = 0;
+		y = high;
 	if (x > width)
-		x = 0;
-	if (x < minX)
 		x = width;
-	if (y < minY)
-		y = width;
+
 }
 
 
@@ -91,8 +75,6 @@ void point::direction()
 	case DOWN:
 		dirY = 1;
 		dirX = 0;
-		break;
-	default:
 		break;
 	}
 
