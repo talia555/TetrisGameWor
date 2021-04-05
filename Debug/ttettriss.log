@@ -1,0 +1,14 @@
+﻿  game.cpp
+C:\Users\talau\source\repos\ttettriss\game.cpp(24,12): error C2039: 'runGame': is not a member of 'Game'
+C:\Users\talau\source\repos\ttettriss\game.cpp(14): message : see declaration of 'Game'
+  main.cpp
+C:\Users\talau\source\repos\ttettriss\game.cpp(26,10): error C2065: 'checkEndGame': undeclared identifier
+C:\Users\talau\source\repos\ttettriss\main.cpp(14,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\talau\source\repos\ttettriss\main.cpp(15,2): error C2065: 'Game': undeclared identifier
+C:\Users\talau\source\repos\ttettriss\main.cpp(15,7): error C2146: syntax error: missing ';' before identifier 'game'
+C:\Users\talau\source\repos\ttettriss\main.cpp(15,7): error C2065: 'game': undeclared identifier
+  tetris.cpp
+C:\Users\talau\source\repos\ttettriss\main.cpp(16,2): error C3861: 'game': identifier not found
+C:\Users\talau\source\repos\ttettriss\tetris.cpp(91,6): warning C4101: 'i': unreferenced local variable
+  Generating Code...
+C:\Users\talau\source\repos\ttettriss\tetris.cpp(247,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
