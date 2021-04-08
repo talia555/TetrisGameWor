@@ -1,20 +1,26 @@
 #pragma once
 #include "utils.h"
 
+
 class point
 {
 	int x,y;
-	char figure;  //somtimes ' ' sometimes \n
+	char figure;  //somtimes ' ' sometimes '*'
 
 public:
+<<<<<<< HEAD
 	
 
 	point(int _x=0, int _y=0, char _figure=' ')
+=======
+	point(int _x, int _y, char _figure=' ',int color=3)
+>>>>>>> 91253e950cc90c7f351daa39c549cd54aeb86a03
 	{
 		x = _x;
 		y = _y;
 		_figure = figure;
 	}
+<<<<<<< HEAD
 	
 	
 };
@@ -43,6 +49,8 @@ public:
 		y = _y;
 		figure = _figure;
 	}
+=======
+>>>>>>> 91253e950cc90c7f351daa39c549cd54aeb86a03
 
 	int getX()
 	{
@@ -63,11 +71,13 @@ public:
 	{
 		return this->y;
 	}
-	char getBoard1()
+
+	char getFigure()
 	{
-		return board1[high][width];
+		return figure;
 	}
 
+<<<<<<< HEAD
 	void setPoint(int _x, int _y, char _figure=' ')
 	{
 		x = _x;
@@ -75,8 +85,24 @@ public:
 		figure = _figure;
 	}
 	void runPoint(int x, int y);
+=======
+	void erase(point& p);
+	void draw(point& p);
+>>>>>>> 91253e950cc90c7f351daa39c549cd54aeb86a03
 	void direction();
 	void move();
+	void runPoint(point& p);
+
+	
+	
+};
+
+
+
+	
+
+	void runPoint(int x, int y);
+
 	void draw(int x, int y);
 	void erase(int x, int y);
 	bool checksettle(int x, int y);
