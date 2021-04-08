@@ -7,7 +7,9 @@ class point
 	char figure;  //somtimes ' ' sometimes \n
 
 public:
-	point(int _x, int _y, char _figure=' ')
+	
+
+	point(int _x=0, int _y=0, char _figure=' ')
 	{
 		x = _x;
 		y = _y;
@@ -25,11 +27,15 @@ class point {
 	int dirX = 0;
 	int dirY = 0;
 public:
-	enum { width = 30, high = 20, minX = 1, minY = 1, LEFT = 'j', RIGHT = 'l', DOWN = 'm', space = 40 };
-	char board1[high][width];
-	char board2[high][width];
-	char board[high][width];
+	
 
+
+	point()
+	{
+		x = 0;
+		y = 0;
+		figure = ' ';
+	}
 
 	point(int _x, int _y, char _figure = '*')
 	{
@@ -60,6 +66,13 @@ public:
 	char getBoard1()
 	{
 		return board1[high][width];
+	}
+
+	void setPoint(int _x, int _y, char _figure=' ')
+	{
+		x = _x;
+		y = _y;
+		figure = _figure;
 	}
 	void runPoint(int x, int y);
 	void direction();

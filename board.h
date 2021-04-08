@@ -1,36 +1,35 @@
 #include <iostream>
-#include <stdlib.h>
-#include <stdio.h>
-#include <conio.h>
-#include <windows.h>
-#include <time.h>
+
 #include "point.h"
 constexpr int ESC = 27;
 using namespace std;
 
+
 class board
 {
-	int width = 30, high = 20;
-	point** myBoard1;
-	point** myBoard2;
-
+	point** matrix;
+	int width;
+	int high;
 public:
+
+	board(){}
 	board(int _width, int _high)
 	{
 		width = _width;
 		high = _high;
-		myBoard = new point*[width];
-		for(int i=0)
+		matrix = new point* [width];
+		for (int i = 0; i < width; i++)
+			matrix[i] = new point(i,high);//to check if it is working and init the points (x,y)
 
 	}
 
-	enum { width = 30, high = 20, minX = 1, minY = 1, LEFT = 'j', RIGHT = 'l', DOWN = 'm', space = 40 };
 	
-
-
+	
+	point** getBoard() { return matrix; }
+	int getHigh() { return high; }
+	int getWith() { return width; }
 	void runBoard();
-	void creatboard1();
-	void creatboard2();
-	void printFrame1();
-	void printFrame2();
+	void creatboard();
+	void printFrame(int x);
+	
 };

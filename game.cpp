@@ -9,27 +9,22 @@ void Game::runGame()
 	bool END = false;
 	while (END == false)
 	{
-		teris()
-		board taliab(23, 45);
-		 board taliab(23,45).runBoard();
-		point().runPoint();
 		checkBoardPlace();
 		END = checkEndGame();
 	}
 	cout << "GAME OVER";
-	exit(-1);
 }
 
 bool Game::checkEndGame()
 {
-	board b;
 	
-	for (int i = 0; i <b.width; i++)
+	
+	for (int i = 0; i <b1.width; i++)
 	{
-		if (b.board1[0][i] != ' ')
+		if (b1.getBoard(0,i).!isEmpty())
 			return true;
 
-		if (b.board2[0][i] != ' ')
+		if (b2.getBoard(0, i).!isEmpty())
 			return true;
 
 	}

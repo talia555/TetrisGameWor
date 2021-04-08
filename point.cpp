@@ -1,6 +1,6 @@
 #pragma once
 #include "point.h"
-
+#include "utils.h"
 
 bool  point::checksettle(int x, int y)
 {
