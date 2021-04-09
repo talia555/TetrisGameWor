@@ -1,20 +1,8 @@
 #pragma once
 #include "point.h"
-#include "utils.h"
 
 
-bool  point::checksettle(int x, int y)
-{
-	if (board[y + 1][x] != ' ')
-		return true;
-	else
-		return false;
 
-}
-void point::putFeatureBoard()
-{
-	board[y][x] = figure;
-}
 
 void point::runPoint(point& p)
 {
@@ -28,7 +16,7 @@ void point::runPoint(point& p)
 			if (_kbhit())
 			{
 				move();
-				draw(p);
+				draw();
 			}
 
 			cout.flush();
@@ -36,9 +24,9 @@ void point::runPoint(point& p)
 		if (!_kbhit())
 		{
 			setY(++y);
-			draw(p);
+			draw();
 		}
-		erase(p);
+		erase();
 	}
 }
 
@@ -82,4 +70,11 @@ void point::direction()
 
 
 
-
+void point::erase()
+{
+	figure = ' ';
+}
+void point::draw()
+{
+	figure = '*';
+}

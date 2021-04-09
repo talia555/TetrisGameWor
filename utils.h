@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
-#include <cstdlib>
-#include <cstdio>
+#include <stdlib.h>
+#include <stdio.h>
 #include <conio.h>
 #include <windows.h>
 #include <time.h>

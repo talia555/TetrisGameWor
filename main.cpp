@@ -7,4 +7,5 @@ void main()
 {
 	Game game;
 	game.runGame();
+
 }

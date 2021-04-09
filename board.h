@@ -1,35 +1,35 @@
+#pragma once
 #include <iostream>
-
-#include "point.h"
-constexpr int ESC = 27;
+#include "utils.h"
 using namespace std;
 
+class point;// this how we solve circular include (go to cpp to see the rest)
 
 class board
 {
 	point** matrix;
-	int width;
-	int high;
+	
 public:
-
-	board(){}
-	board(int _width, int _high)
-	{
-		width = _width;
-		high = _high;
-		matrix = new point* [width];
-		for (int i = 0; i < width; i++)
-			matrix[i] = new point(i,high);//to check if it is working and init the points (x,y)
-
-	}
-
-	
-	
-	point** getBoard() { return matrix; }
+	board();
 	int getHigh() { return high; }
-	int getWith() { return width; }
+	int getWidth() { return width; }
 	void runBoard();
 	void creatboard();
 	void printFrame(int x);
+	operator point**() const{ return matrix; }
+	/*bool  checksettle(int x, int y)
+	{
+	if (!(matrix[y + 1][x].isEmpty()))
+		return true;
+	else
+		return false;
+
+	}
+void putFeagureBoard()
+{
+	matrix[][x] = figure;
+}*/
+
+	friend ostream& operator<<(ostream& os, const board& _board);
 	
 };

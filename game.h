@@ -1,17 +1,16 @@
 #pragma once
 #include "utils.h"
-
+#include "board.h"
+#include "point.h"
 
 class Game
 {
-	board b1, b2; 
-	menu m;
+	board b1,b2;
+	
+	//menu m;
 public:
-	Game()
-	{
-		board b1(22, 28);
-		board b2(22, 28);
-	}
+	Game(): b1(), b2(){}
+	
 	void runGame();
 	void checkBoardPlace();
 	bool checkEndGame();
