@@ -1,6 +1,6 @@
 #pragma once
 #include "utils.h"
-
+#include "board.h"
 
 
 
@@ -13,7 +13,6 @@ class point {
 public:
 	
 	//point() = default;
-
 	point(int _x = 0, int _y = 0, char _figure = ' ')
 	{
 		x = _x;
@@ -62,17 +61,20 @@ public:
 	void draw();
 	void direction();
 	void move();
-	void runPoint(point& p);
+	void runPoint();
 	operator char() { return figure; }
 	friend ostream& operator<<(ostream& os, const point& p)
 	{
 		os << p.figure;
 		return os;
 	}
-
+	void reset();
 	
-};
+	void incY() { ++y; }
 
+	void setFigure(char ch) { figure = ch; }
+
+};
 
 
 	

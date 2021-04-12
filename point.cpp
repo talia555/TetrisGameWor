@@ -4,31 +4,6 @@
 
 
 
-void point::runPoint(point& p)
-{
-	cout.flush();
-	int i, iter = 30;
-
-	while (!_kbhit() || getchar() != ESC)
-	{
-		for (int i = 0; i < iter; i++)
-		{
-			if (_kbhit())
-			{
-				move();
-				draw();
-			}
-
-			cout.flush();
-		}
-		if (!_kbhit())
-		{
-			setY(++y);
-			draw();
-		}
-		erase();
-	}
-}
 
 
 
@@ -38,10 +13,10 @@ void point::move()
 	direction();
 	x += dirX;
 	y += dirY;
-	if (y > high)
-		y = high;
-	if (x > width)
-		x = width;
+	if (y > high-2)
+		y = high-2;
+	if (x > width-2)
+		x = width-2;
 
 }
 
@@ -73,8 +48,21 @@ void point::direction()
 void point::erase()
 {
 	figure = ' ';
+	gotoxy(x, y);
+	cout << figure;
 }
 void point::draw()
 {
 	figure = '*';
+	gotoxy(x, y);
+	cout << figure;
+}
+
+void point::reset()
+{
+	x = 10;
+	y = 0;
+	figure = '*';
+	dirX = 0;
+	dirY = 0;
 }

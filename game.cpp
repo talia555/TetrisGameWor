@@ -7,10 +7,12 @@
 void Game::runGame()
 {
 	bool END = false;
+	
 	while (END == false)
 	{
-		cout << b1;
-		cout << b2;
+		point start(10, 0, '*');
+		b1.runPoint(start);
+		
 		checkBoardPlace();
 		END = checkEndGame();
 	}
@@ -21,7 +23,7 @@ bool Game::checkEndGame()
 {
 	
 	
-	for (int i = 0; i <b1.getWidth(); i++)
+	for (int i = 1; i <width-1; i++)
 	{
 		if (!(b1[0][i].isEmpty()))
 			return true;

@@ -9,7 +9,9 @@ class board
 {
 	point** matrix;
 	
+	
 public:
+	static int pointToPrint;
 	board();
 	int getHigh() { return high; }
 	int getWidth() { return width; }
@@ -17,6 +19,9 @@ public:
 	void creatboard();
 	void printFrame(int x);
 	operator point**() const{ return matrix; }
+
+	void runPoint(point p);
+
 	/*bool  checksettle(int x, int y)
 	{
 	if (!(matrix[y + 1][x].isEmpty()))
