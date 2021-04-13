@@ -13,18 +13,21 @@ void point::move()
 	direction();
 	x += dirX;
 	y += dirY;
-	if (y > high-2)
-		y = high-2;
-	if (x > width-2)
-		x = width-2;
+	if (y > high-1)
+		y = high-1;
+	if (x > width-1)
+		x = width-1;
 
 }
 
 
 void point::direction()
 {
-	char c = _getch();
-
+	char c = DOWN;
+	
+	while (_kbhit())
+		 c = _getch();
+	
 	switch (c)
 	{
 	case LEFT:
@@ -41,6 +44,9 @@ void point::direction()
 		break;
 	}
 
+	//yes, very nice you are a vary smart girl
+
+
 }
 
 
@@ -50,12 +56,15 @@ void point::erase()
 	figure = ' ';
 	gotoxy(x, y);
 	cout << figure;
+	gotoxy(x, y);
+
 }
 void point::draw()
 {
 	figure = '*';
 	gotoxy(x, y);
 	cout << figure;
+	gotoxy(x, y);
 }
 
 void point::reset()

@@ -1,4 +1,2 @@
-﻿  board.cpp
-C:\Users\97254\source\repos\TetrisGameWor\board.cpp(9,9): warning C4101: 'j': unreferenced local variable
-C:\Users\97254\source\repos\TetrisGameWor\board.cpp(74,6): warning C4101: 'i': unreferenced local variable
+﻿  point.cpp
   ttettriss.vcxproj -> C:\Users\97254\source\repos\TetrisGameWor\x64\Debug\ttettriss.exe

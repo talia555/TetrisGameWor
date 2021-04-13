@@ -17,7 +17,7 @@ public:
 	int getWidth() { return width; }
 	void runBoard();
 	void creatboard();
-	void printFrame(int x);
+	void printBoard(int x);
 	operator point**() const{ return matrix; }
 
 	void runPoint(point p);
@@ -36,5 +36,5 @@ void putFeagureBoard()
 }*/
 
 	friend ostream& operator<<(ostream& os, const board& _board);
-	
+	bool canPutSquer(point p);
 };

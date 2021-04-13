@@ -17,11 +17,11 @@ board:: board()
 void board::runBoard()
 {
 	creatboard();
-	printFrame(pointToPrint);
+	printBoard(pointToPrint);
 	pointToPrint = 40;
 }
 
-void board::printFrame(int x)
+void board::printBoard(int x)
 {
 	gotoxy(x, 1);
 	for (int i = 0; i < high; i++)
@@ -29,7 +29,7 @@ void board::printFrame(int x)
 		gotoxy(x, i);
 		for (int j = 0; j <width; j++)
 		{
-			cout << matrix[i][j];        //we will biuld oprtator printer
+			cout << matrix[i][j];
 		}
 	}
 	cout << endl;
@@ -72,41 +72,32 @@ void board::runPoint(point p)
 {
 	cout.flush();
 	int i, iter = 30;
-
+	
+		// matrix[p.getY() + 1][p.getX()] == '*';
 	while (!_kbhit() || getchar() != ESC)
 	{
-		for (int i = 0; i < iter; i++)
-		{
-			if (_kbhit())
-			{
-				p.move();
-				p.draw();
-				Sleep(100);
-				p.erase();
-			}
 
+
+		while (matrix[p.getY()][p.getX()].isEmpty() && p.getY() != high-1)
+		{
+			if (canPutSquer(p))
+				break;
+
+			p.move();
+			p.draw();
+			Sleep(300);
+			p.erase();
 			cout.flush();
-		}
-		if (!_kbhit())
-		{
-			if (p.getY() < high -1)
-			{
-				p.incY();
-				p.draw();
-				Sleep(100);
-				p.erase();
-			}
-			else
-			{
-				matrix[p.getY()][p.getX()].setFigure('*');
-				p.reset();
-			}
-		
-			printFrame(1);
 
-			gotoxy(50, 0);
-			cout << matrix[18][p.getX()] << "------------------------";
 		}
-		
+
+		matrix[p.getY()][p.getX()].setFigure('*');
+		p.reset();
+
+		printBoard(1);
 	}
+
+
 }
+
+bool board::canPutSquer(point p) {return matrix[p.getY() + 1][p.getX()] == '*'; }
