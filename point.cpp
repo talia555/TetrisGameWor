@@ -11,12 +11,11 @@
 void point::move()
 {
 	direction();
-	x += dirX;
-	y += dirY;
-	if (y > high-1)
-		y = high-1;
-	if (x > width-1)
-		x = width-1;
+	if(x>1 && x<width-2)
+		x += dirX;
+	if (y < high - 1)
+		y += dirY;
+	
 
 }
 
@@ -34,10 +33,12 @@ void point::direction()
 		dirX = -1;
 		dirY = 0;
 		break;
+
 	case RIGHT:
 		dirX = 1;
 		dirY = 0;
 		break;
+
 	case DOWN:
 		dirY = 1;
 		dirX = 0;

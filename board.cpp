@@ -78,7 +78,7 @@ void board::runPoint(point p)
 	{
 
 
-		while (matrix[p.getY()][p.getX()].isEmpty() && p.getY() != high-1)
+		while (matrix[p.getY()][p.getX()].isEmpty() && p.getY() != high-2)
 		{
 			if (canPutSquer(p))
 				break;
