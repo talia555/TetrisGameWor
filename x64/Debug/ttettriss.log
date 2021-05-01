@@ -1,5 +1,6 @@
 ﻿  main.cpp
-C:\Users\97254\source\repos\TetrisGameWor\Tetrimino.h(15,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\97254\source\repos\TetrisGameWor\Tetrimino.h(17,7): warning C4101: 'i': unreferenced local variable
+C:\Users\97254\source\repos\TetrisGameWor\Tetrimino.h(7,28): warning C4083: expected ')'; found identifier 'C26495'
+C:\Users\97254\source\repos\TetrisGameWor\Tetrimino.h(20,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\97254\source\repos\TetrisGameWor\Tetrimino.h(22,7): warning C4101: 'i': unreferenced local variable
 C:\Users\97254\source\repos\TetrisGameWor\main.cpp(9,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
   ttettriss.vcxproj -> C:\Users\97254\source\repos\TetrisGameWor\x64\Debug\ttettriss.exe

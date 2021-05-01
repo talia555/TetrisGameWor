@@ -62,7 +62,7 @@ void point::erase()
 }
 void point::draw()
 {
-	figure = '*';
+	figure = (char)220;
 	gotoxy(x, y);
 	cout << figure;
 	gotoxy(x, y);
@@ -72,7 +72,7 @@ void point::reset()
 {
 	x = 10;
 	y = 0;
-	figure = '*';
+	figure = (char)220;
 	dirX = 0;
 	dirY = 0;
 }

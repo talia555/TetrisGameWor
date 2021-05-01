@@ -7,14 +7,20 @@ int board::pointToPrint =1;
 
 void main()
 {
-	//Game game;
-	//game.runGame();
+	Game game;
+	game.runGame();
 
 	
-	while (true) {
+	/*while (true) {
 		Tetrimino t;
-		for (int i = 0; i < t.getCols(); i++)
-			cout << t[i];
+		for (int i = 0; i < t.getRows(); i++)
+		{
+			cout << endl;
+			for (int j = 0; j < t.getCols(); j++)
+				cout << t[i][j];
+		}
+		Sleep(1000);
 		cout << endl;
-	}
+
+	}*/
 }

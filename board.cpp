@@ -44,11 +44,11 @@ void board::creatboard()
 		{
 			if (i == (high - 1))
 			{
-				matrix[i][j].setPoint(i, j,'_');
+				matrix[i][j].setPoint(i, j,(char)220);
 			}
 			if ((j == 0) || j == (width - 1))
 			{
-				matrix[i][j].setPoint(i, j, '|');
+				matrix[i][j].setPoint(i, j, (char)219);
 			}
 			else if(i != (high - 1))
 				matrix[i][j].setPoint(i, j, ' ');
@@ -91,7 +91,7 @@ void board::runPoint(point p)
 
 		}
 
-		matrix[p.getY()][p.getX()].setFigure('*');
+		matrix[p.getY()][p.getX()].setFigure((char)220);
 		p.reset();
 
 		printBoard(1);
@@ -100,4 +100,4 @@ void board::runPoint(point p)
 
 }
 
-bool board::canPutSquer(point p) {return matrix[p.getY() + 1][p.getX()] == '*'; }
+bool board::canPutSquer(point p) {return matrix[p.getY() + 1][p.getX()] == (char)220; }

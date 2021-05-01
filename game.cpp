@@ -10,7 +10,7 @@ void Game::runGame()
 	
 	while (END == false)
 	{
-		point start(10, 0, '*');
+		point start(10, 0, (char)220);
 		b1.runPoint(start);
 		
 		checkBoardPlace();
