@@ -44,5 +44,8 @@
     <ClInclude Include="point.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Tetrimino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
